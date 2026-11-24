@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Интернет-магазин</h1>
+
+    <div class="header-row">
+        <div class="col-name">Наименование<br>товара:</div>
+        <div class="col-price">Цена за шт:</div>
+        <div class="col-qty">Кол-во:</div>
+    </div>
+
+    <div class="product-row">
+        <div class="col-name"><input type="checkbox" name="product" value="Колготки" data-price="120"> Колготки</div>
+        <div class="col-price">120 руб.</div>
+        <div class="col-qty">
+            <select disabled>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option><option>6</option>
+                <option>7</option><option>8</option><option>9</option><option>10</option>
+            </select> шт
+        </div>
+    </div>
+
+    <div class="product-row">
+        <div class="col-name"><input type="checkbox" name="product" value="Носки" data-price="100"> Носки</div>
+        <div class="col-price">100 руб.</div>
+        <div class="col-qty">
+            <select disabled>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option><option>6</option>
+                <option>7</option><option>8</option><option>9</option><option>10</option>
+            </select> шт
+        </div>
+    </div>
+
+    <div class="product-row">
+        <div class="col-name"><input type="checkbox" name="product" value="Футболка" data-price="350"> Футболка</div>
+        <div class="col-price">350 руб.</div>
+        <div class="col-qty">
+            <select disabled>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option><option>6</option>
+                <option>7</option><option>8</option><option>9</option><option>10</option>
+            </select> шт
+        </div>
+    </div>
+
+    <br>
+    <button id="calcBtn">Рассчитать</button>
+    <br><br>
+
+    <div class="result-row">
+        Всего: <input type="text" id="total" value="" readonly> руб.
+    </div>
+    <br>
+    <div class="result-row">
+        Ваша скидка составила: <input type="text" id="discount" value="" readonly> %
+    </div>
+
+    <br>
+    <button id="clearBtn">Очистить</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
